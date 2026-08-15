@@ -1,0 +1,79 @@
+# ==========================================
+# Archivos de Entorno y Secretos
+# ==========================================
+.env
+.env.*.local
+*.pem
+*.key
+
+# ==========================================
+# Frontend (React / Node / Vite)
+# ==========================================
+# Dependencias
+frontend/node_modules/
+node_modules/
+
+# Builds de producción
+frontend/dist/
+frontend/dist-ssr/
+dist/
+
+# Logs de npm/yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Caché y temporales de Vite/Node
+frontend/.eslintcache
+frontend/.vite
+.vite/
+.npm/
+
+# ==========================================
+# Backend (Go)
+# ==========================================
+# Binarios compilados
+backend/turnero
+backend/server
+backend/*.exe
+*.exe
+*.test
+*.prof
+
+# Directorio vendor (si se llega a usar go mod vendor)
+backend/vendor/
+
+# Archivos de test temporales
+coverage.txt
+coverage.out
+
+# ==========================================
+# IDEs y Editores
+# ==========================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*~
+
+# ==========================================
+# Sistema Operativo
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==========================================
+# Docker
+# ==========================================
+# (Generalmente no se ignora nada específico salvo volumen local si existiera una carpeta)
+# Si tuvieras una base de datos montada local en una carpeta, iría acá:
+# /pgdata/
