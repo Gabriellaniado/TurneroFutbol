@@ -1,0 +1,17 @@
+# Binarios compilados localmente (no queremos meter el .exe de Windows
+# ni el binario de Linux dentro del contenedor — el builder los genera frescos)
+*.exe
+turnero
+server
+
+# Vendor (si se usa go mod vendor, no lo necesitamos — tenemos go.mod)
+vendor/
+
+# Resultados de tests — no tienen nada que hacer en producción
+*.test
+*.prof
+coverage.out
+coverage.txt
+
+# Git no es parte del código fuente
+.git/
